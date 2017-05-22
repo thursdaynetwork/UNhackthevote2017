@@ -391,6 +391,9 @@ a:active {
 .animated .logo-1 {
     display: none!important;
 }
+.logo-1 {
+    width: 25%;
+}
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default.animated .navbar-nav > li > a:hover {
