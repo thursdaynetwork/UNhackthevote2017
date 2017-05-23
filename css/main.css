@@ -327,7 +327,7 @@ a:active {
 
 .navbar-default {
     background-color: transparent;
-    padding:20px;    
+    padding:15px;    
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -ms-transition: all 0.3s ease-in-out 0s;
@@ -386,21 +386,26 @@ a:active {
 .navbar-default .navbar-toggle {
     border-color: #ffffff;
 }
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #ffffff;
-    border-color: #1d1d1d;
-}
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #ffffff;
 }
-.navbar-default .navbar-toggle .icon-bar:hover,
-.navbar-default .navbar-toggle .icon-bar:focus, {
+.navbar-default.animated .navbar-toggle {
+    border-color: #1d1d1d;
+}
+.navbar-default.animated .navbar-toggle .icon-bar {
+    background-color: #1d1d1d;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #1d1d1d;
 }
 @media (max-width: 767px) {
     .navbar-default .navbar-brand {
-        font-size:18px;
+        font-size:14px;
     }
 }
 
