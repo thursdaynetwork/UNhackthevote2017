@@ -412,7 +412,6 @@ a:active {
 
 #hero-area {  
   background: #1d1d1d;
-    background-image: url(../images/header-overlay.png);
     padding: 100px 0;
   /*background: rgba(0, 0, 0, 0) linear-gradient(135deg, #710010 0%, #9f0b1f 100%) repeat scroll 0 0; */
 }
