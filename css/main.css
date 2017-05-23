@@ -398,7 +398,11 @@ a:active {
 .navbar-default .navbar-toggle .icon-bar:focus, {
     background-color: #1d1d1d;
 }
-
+@media (max-width: 767px) {
+    .navbar-default .navbar-brand {
+        font-size:18px;
+    }
+}
 
 
 
