@@ -332,9 +332,8 @@ a:active {
 
 
 #hero-area {  
-    background: #1d1d1d;
-  padding:180px 0;
-    /*background: rgba(0, 0, 0, 0) linear-gradient(135deg, #710010 0%, #9f0b1f 100%) repeat scroll 0 0; */
+  background: #1d1d1d;
+  /*background: rgba(0, 0, 0, 0) linear-gradient(135deg, #710010 0%, #9f0b1f 100%) repeat scroll 0 0; */
 }
 #hero-area:before {
     content: "";
@@ -345,11 +344,10 @@ a:active {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: url(../img/header-overlay.png);
+    background: url(../images/header-overlay.png);
     opacity: 0.9;
 }
 #hero-area .block {
-  padding-top: 100px;
 }
 #hero-area .block h1 {
   margin-bottom: 35px;
@@ -452,33 +450,6 @@ a:active {
 /* #hero-area  */
 
 
-
-
-
-
-
-
-
-
-
-#hero-area .navbar-default .navbar-nav {
-    padding-top: 11px;
-    padding-right: 60px;
-}
-#hero-area .navbar-default .navbar-nav li {
-    padding: 0px 15px;
-}
-#hero-area .navbar-default .navbar-nav li a {
-    color: #fff;
-    padding: 10px 0px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
-
-
-#hero-area .block {
-}
 #hero-area .block p {
     color: #fff;
     font-size: 18px;
@@ -523,172 +494,6 @@ a:active {
     overflow: hidden;
     height: 60px;
 }
-/*--
-    service start
---*/
-
-#service {
-    text-align: center;
-    background: #f9f9f9;
-}
-
-.service {
-    text-align: left;
-}
-.service .caption {
-    text-align: center;
-}
-.service .caption h3 {
-    margin: 0 0 10px;
-    color: #333333;
-    font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
-.service .icon-box {
-    display: inline-block;
-    margin-bottom: 15px;
-    overflow-y: hidden;
-    position: relative;
-    width: 100%;
-}
-.service .icon-box:before {
-    display: block;
-    content: '';
-    position: relative;
-    top: 75px;
-    width: 100px;
-    height: 1px;
-    display: block;
-    margin: 0 auto;
-    background-color: #cbcbcd;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -khtml-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-.service .icon-box .icon {
-    background-color: #26282b;
-    border-radius: 5px;
-    display: inline-block;
-    height: 75px;
-    left: 36%;
-    position: relative;
-    top: 12px;
-    width: 75px;
-    -webkit-transform: rotate(50deg);
-       -moz-transform: rotate(50deg);
-        -ms-transform: rotate(50deg);
-         -o-transform: rotate(50deg);
-            transform: rotate(50deg);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec64e), color-stop(100%,#41aba0));
-  background: -webkit-linear-gradient(-45deg, #8ec64e 0%,#41aba0 100%);
-  background: -o-linear-gradient(-45deg, #8ec64e 0%,#41aba0 100%);
-  background: -ms-linear-gradient(-45deg, #8ec64e 0%,#41aba0 100%);
-  background: linear-gradient(135deg, #8ec64e 0%,#41aba0 100%);
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -khtml-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.service:hover .icon-box .icon {
-    background-color: #41aba0;
-}
-
-.service .icon-box .icon i {
-    color: #fff;
-    font-size: 30px;
-    height: 75px;
-    line-height: 70px;
-    text-align: center;
-    width: 75px;
-    display: inline-block;
-    -webkit-transform: rotate(-50deg);
-       -moz-transform: rotate(-50deg);
-        -ms-transform: rotate(-50deg);
-         -o-transform: rotate(-50deg);
-            transform: rotate(-50deg);
-}
-
-#service .thumbnail {
-    border: 2px solid #DEDEDE;
-    border-radius: 0px;
-    padding: 40px 0;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-#service .thumbnail:hover {
-    background-color: #41aba0;
-    border: 2px solid #41aba0;
-    opacity: 1;
-}
-.thumbnail .icon {
-    font-size: 50px;
-}
-#service .thumbnail:hover .icon,
-#service .thumbnail:hover .caption h3,
-#service .thumbnail:hover .caption p {
-    color: #fff;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-}
-#service .thumbnail img {
-    padding-bottom: 30px;
-}
-#service .thumbnail .img-adjust {
-    margin-top: 10px;
-    position: relative;
-}
-#service .thumbnail .caption h3 {
-    color: #333333;
-    font-weight: 300;
-    font-size: 25px;
-    padding-bottom: 22px;
-}
-#service .caption p {
-    line-height: 1.5;
-    font-size: 15px;
-    color: #7e7e7e;
-}
-/*--
-    About start
---*/
-
-#about h3 {
-  font-size: 26px !important;
-  font-weight: 300;
-  line-height: 36px;
-  color: #7e7e7e;
-  margin-top: 20px;
-}
-#about .heading p {
-    font-size: 18px;
-    color: #898989;
-}
-#about .block p {
-    font-size: 15px;
-    color: #7e7e7e;
-    line-height: 30px;
-}
-#about .block .bottom-text {
-    padding-right: 20px;
-}
-#about .block img {
-    width: 100%;
-}
 
 
 
@@ -718,40 +523,7 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
 }
 
 
-/*--
-    call-to-action start
---*/
 
-#call-to-action {
-    padding: 70px 0px;
-    background: url(../images/call-to-action.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border-top: 1px solid #eee;
-    color: #fff;
-}
-
-#call-to-action .block h2 {
-  font-size: 25px;
-  margin-bottom: 10px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-#call-to-action .block p {
-    font-size: 15px;
-    padding-right: 30px;
-    color: #9F9F9F;
-}
-#call-to-action .block input {
-    width: 40%;
-    height: 40px;
-    border-radius: 0;
-    display: inline-block;
-    box-shadow: none;
-    vertical-align: middle;
-}
 
 #contact {
 
