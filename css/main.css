@@ -118,10 +118,6 @@ a:active {
     color: #777;
 }
 
-.btn {
-    border-radius: 0;
-}
-
 .btn-home {
   background-color: transparent;
   border: 1px solid #fff;
@@ -129,7 +125,6 @@ a:active {
   color: #fff;
   font-size: 18px;
   padding: 10px 40px;
-  margin-top: 30px;
 }
 
 .btn-home:hover,
@@ -411,14 +406,15 @@ a:active {
 
 
 #hero-area {  
-  background: #1d1d1d;
+    background: #1d1d1d;
     padding: 100px 0;
   /*background: rgba(0, 0, 0, 0) linear-gradient(135deg, #710010 0%, #9f0b1f 100%) repeat scroll 0 0; */
 }
 
 #hero-area .hero-logo {
-    max-width:380px;
-    margin:auto;
+    max-width:250px;
+    margin:20px auto;
+    
 }
 #hero-area:before {
     content: "";
