@@ -404,9 +404,12 @@ a:active {
     background-color: #1d1d1d;
 }
 @media (max-width: 767px) {
-    .navbar-default .navbar-brand {
-        font-size:14px;
-    }
+  .navbar-default .navbar-nav{
+    background-color: #1d1d1d;
+  }
+  .navbar-default .navbar-brand {
+    font-size:14px;
+  }
 }
 
 
