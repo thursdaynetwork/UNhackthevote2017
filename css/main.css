@@ -9,6 +9,7 @@ body {
     line-height: 25px;
     color: #3b4045;
     font:14px/22px 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto Mono', monospace;
       -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -17,7 +18,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 300;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
     margin: 0px;
 }
 h1 {
@@ -192,7 +194,7 @@ a:active {
 }
 
 
-/*Preloader*/
+/** PRELOADER **/
 
 #preloader {
     background-color: #fff;
@@ -346,10 +348,10 @@ a:active {
 
 .navbar-default .navbar-brand {
     color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
     font-size:28px;
     font-weight: 500;
-    letter-spacing: 5px;
-    font-family: 'Verdana', sans-serif;
+    letter-spacing: 3px;
 }
 
 .navbar-default.animated .navbar-brand {
