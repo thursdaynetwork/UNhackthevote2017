@@ -374,6 +374,38 @@ a:active {
 /** CUSTOM NAVBAR **/
 
 .navbar-default {
+<<<<<<< HEAD
+=======
+    padding:20px;
+}
+
+
+
+/* #hero-area  */
+.animated .logo-2 {
+    display: block!important;
+}
+.logo-2 {
+    display: none!important;
+}
+.animated .logo-1 {
+    display: none!important;
+}
+.logo-1 {
+    width: 25%;
+}
+
+.logo-2 {
+    width: 25%;  
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default.animated .navbar-nav > li > a:hover {
+    color: #009ee5;
+}
+.navbar-default {
+>>>>>>> master
     background-color: transparent;
     padding:20px;    
     -webkit-transition: all 0.3s ease-in-out 0s;
