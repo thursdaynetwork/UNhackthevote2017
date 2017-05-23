@@ -369,7 +369,6 @@ a:active {
   background: #fff;
   height: 3px;
   width: 110px;
-
 }
 
 
@@ -394,6 +393,11 @@ a:active {
 .logo-1 {
     width: 25%;
 }
+
+.logo-2 {
+    width: 25%;
+}
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default.animated .navbar-nav > li > a:hover {
