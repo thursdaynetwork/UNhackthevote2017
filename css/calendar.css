@@ -76,14 +76,14 @@
 {
     margin: 0;
     padding: 7px 25px;
-    color: #fff;
+    color: #6a723d;
     font-family: "Verdana";
     font-size: 14px;
     text-decoration: none;
     outline: none;
     line-height: 20px;
     vertical-align: middle;
-    background: rgb(66,129,244);
+    background: rgb(187, 206, 84);
     box-shadow: 0 0 40px rgba(0, 0, 0, .13) inset;
     border-radius: 4px;
     zoom: 1;
@@ -133,5 +133,5 @@
 
 .atc-style-blue .atcb-item.hover,
 .atc-style-blue .atcb-item:hover {
-    background: rgb(188,214,42);
+    background: rgb(66,129,244);
 }
