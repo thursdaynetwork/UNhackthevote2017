@@ -119,18 +119,20 @@ a:active {
 }
 
 .btn-home {
-  background-color: transparent;
-  border: 1px solid #fff;
+  background-color: red;
+  border: 1px solid #ce0320;
   border-radius: 0px;
-  color: #fff;
+  color: #000000;
   font-size: 18px;
+    font-weight:700;
   padding: 10px 40px;
 }
 
 .btn-home:hover,
 .btn-home:focus {
     background-color: #fff;
-    color: #555;
+    color: #ce0320;
+    border-color:#ffffff;
 }
 
 .btn-border {
