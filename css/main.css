@@ -119,18 +119,20 @@ a:active {
 }
 
 .btn-home {
-  background-color: transparent;
-  border: 1px solid #fff;
+  background-color: red;
+  border: 1px solid #ce0320;
   border-radius: 0px;
-  color: #fff;
+  color: #000000;
   font-size: 18px;
+    font-weight:700;
   padding: 10px 40px;
 }
 
 .btn-home:hover,
 .btn-home:focus {
     background-color: #fff;
-    color: #555;
+    color: #ce0320;
+    border-color:#ffffff;
 }
 
 .btn-border {
@@ -195,7 +197,7 @@ a:active {
 /** PRELOADER **/
 
 #preloader {
-    background-color: #fff;
+    background-color: #1d1d1d;
     bottom: auto;
     height: 100%;
     left: auto;
@@ -226,7 +228,7 @@ a:active {
   border-top: 5px solid #ecf0f1;
   border-bottom: 5px solid #ecf0f1;
   border-right: 5px solid #ecf0f1;
-  background: #41aba0;
+  background: #ce0320;
   width: 50px;
   height: 60px;
   -webkit-transform-origin: 0% 50%;
@@ -259,15 +261,15 @@ a:active {
             transform: perspective(600px) rotateY(0deg);
   }
   20% {
-    background: #41aba0;
+    background: #ce0320;
   }
   29.9% {
-    background: #41aba0;
+    background: #ce0320;
   }
   30% {
     -webkit-transform: perspective(200px) rotateY(-90deg);
             transform: perspective(200px) rotateY(-90deg);
-    background: #41aba0;
+    background: #ce0320;
   }
   54.999% {
     opacity: 1;
@@ -278,12 +280,12 @@ a:active {
   60% {
     -webkit-transform: perspective(200px) rotateY(-180deg);
             transform: perspective(200px) rotateY(-180deg);
-    background: #41aba0;
+    background: #ce0320;
   }
   100% {
     -webkit-transform: perspective(200px) rotateY(-180deg);
             transform: perspective(200px) rotateY(-180deg);
-    background: #41aba0;
+    background: #ce0320;
   }
 }
 
@@ -293,15 +295,15 @@ a:active {
             transform: perspective(600px) rotateY(0deg);
   }
   20% {
-    background: #41aba0;
+    background: #ce0320;
   }
   29.9% {
-    background: #41aba0;
+    background: #ce0320;
   }
   30% {
     -webkit-transform: perspective(200px) rotateY(-90deg);
             transform: perspective(200px) rotateY(-90deg);
-    background: #41aba0;
+    background: #ce0320;
   }
   54.999% {
     opacity: 1;
@@ -312,12 +314,12 @@ a:active {
   60% {
     -webkit-transform: perspective(200px) rotateY(-180deg);
             transform: perspective(200px) rotateY(-180deg);
-    background: #41aba0;
+    background: #ce0320;
   }
   100% {
     -webkit-transform: perspective(200px) rotateY(-180deg);
             transform: perspective(200px) rotateY(-180deg);
-    background: #41aba0;
+    background: #ce0320;
   }
 }
 
@@ -515,7 +517,7 @@ a:active {
 }
 
 .init-slider .owl-dot {
-    background-color: #41aba0;
+    background-color: #ce0320;
     border-radius: 50px;
     display: inline-block;
     height: 10px;
@@ -609,7 +611,7 @@ hr {
     color: #fff;
     padding:10px 20px;
     font-size: 15px;
-    background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#8ec64e), color-stop(100%,#41aba0));
+    background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#8ec64e), color-stop(100%,#ce0320));
 }
 #contact .block .btn span {
     padding-left: 23px;
