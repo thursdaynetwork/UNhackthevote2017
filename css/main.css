@@ -96,6 +96,10 @@ section {
     margin: 0px auto;
 }
 
+.dates {
+    padding-top: 27px;
+}
+
 .progress-count {
     display: inline-block;
     padding: 15px;
