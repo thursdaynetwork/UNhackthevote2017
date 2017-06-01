@@ -158,7 +158,10 @@ section {
 /** CONTACT **/
 
 .contact-col {
+    float: none;
+    margin: 0 auto;
     padding-top: 20px;
+    text-align: center;
 }
 
 
