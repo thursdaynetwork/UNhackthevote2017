@@ -154,8 +154,21 @@ section {
     }
 }
 
+/** OBJECTIVES **/
+#objectives h1{
+    padding-bottom:15px;
+}
+
+.objective-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 /** CONTACT **/
+#contact {
+    background-color: #a9062a;
+    color:#ffffff;
+}
 
 .contact-col {
     float: none;
