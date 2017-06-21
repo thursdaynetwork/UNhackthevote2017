@@ -1,4 +1,4 @@
-![HackTheManderDC2017 banner](images/repo-banner.png)
+![HackTheManderDC2017 banner](assets/repo-banner.png)
 
 A splash page for announcing the TN Hackathon in July.
 
