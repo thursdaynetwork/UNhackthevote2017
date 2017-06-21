@@ -139,11 +139,11 @@ section {
         padding-bottom: 20px;
     }
 
-#hero .hero-logo {
-    max-width: 250px;
-    margin: 10px auto;
-    padding:20px;
-}
+    #hero .hero-logo {
+        max-width: 250px;
+        margin: 10px auto;
+        padding:20px;
+    }
     h1 {
         font-size: 30px;
         line-height: 35px;
@@ -155,6 +155,7 @@ section {
 }
 
 /** OBJECTIVES **/
+
 #objectives h1{
     padding-bottom:15px;
 }
@@ -164,10 +165,50 @@ section {
     padding-bottom: 20px;
 }
 
-/** CONTACT **/
-#contact {
+
+/** BACKGROUND INFO **/
+
+#background-info{
+    background-color: #1d1d1d;
+    color:#ffffff;
+}
+
+#background-info h1{
+    padding-bottom:20px;
+}
+
+#background-info img{
+    max-width:800px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 599px) {
+    #background-info img {
+        max-width: 400px;
+        padding:10px;
+    }
+}
+
+
+/** THE CARE **/
+
+#the-care{
     background-color: #a9062a;
     color:#ffffff;
+    min-height: 600px;
+}
+
+#the-care h1{
+    padding-bottom:20px;
+}
+
+/** CONTACT **/
+
+#contact {
+    min-height: 750px;
 }
 
 .contact-col {
