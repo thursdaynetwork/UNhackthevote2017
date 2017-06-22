@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
@@ -43,7 +44,7 @@
     <nav id="top-nav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.html"><span>THURSDAY</span> <span style="color:#a9062a;">NETWORK</span></a> </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>                <a class="navbar-brand" href="index.html"><span>THURSDAY</span> <span style="color:#a9062a;">NETWORK</span></a> </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right" id="top-nav">
                     <li class="current"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
@@ -96,13 +97,13 @@
 
                     <!-- SAVE THE DATE -->
                     <div>
-                        <p class="wow fadeInDown" data-wow-delay="0.6s"> <a href="https://www.eventbrite.com/e/hack-the-vote-2017-tickets-34874022139?ref=ebtn" target="_blank" class="btn btn-hero">SAVE THE DATE! <i class="fa fa-ticket" aria-hidden="true"></i></a> </p>
+                        <p class="wow fadeInDown" data-wow-delay="0.6s"> <a href="https://www.eventbrite.com/e/hack-the-vote-2017-tickets-34874022139?ref=ebtn" target="_blank" class="btn btn-hero">REGISTER NOW! <i class="fa fa-ticket" aria-hidden="true"></i></a> </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- OBJECTIVE AREA -->
 
     <section id="objectives">
@@ -110,16 +111,18 @@
             <div class="row objective-item wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                     <h1 class="text-center">The Goal</h1>
-                    <p class="lead">Inspire young professionals to protect the voting rights of <a href="https://en.wikipedia.org/wiki/Race_and_ethnicity_in_the_United_States" target="_blank">racial minorities</a>. This Hackathon will push YPs to learn about redistricting and gerrymandering and propose data and technology-driven solutions that increase public awareness.</p>
+                    <p class="lead">Inspire young professionals to protect the voting rights of <a href="https://en.wikipedia.org/wiki/Race_and_ethnicity_in_the_United_States" target="_blank">racial minorities</a>. This Hackathon will push YPs to learn about redistricting
+                        and gerrymandering and propose data and technology-driven solutions that increase public awareness.</p>
                 </div>
             </div>
-            <div class="row objective-item wow fadeInUp"  data-wow-delay="0.45s">
+            <div class="row objective-item wow fadeInUp" data-wow-delay="0.45s">
                 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                     <h1 class="text-center">The Challenge</h1>
-                    <p class="lead"><b>Develop an informative way</b> for citizens to learn about redistricting and gerrymandering practices using maps, data, and successful, unsuccessful, and ongoing initiatives. Propose solutions, policies, and movements that will <b>prevent marginalization of our voting rights.</b></p>
+                    <p class="lead"><b>Develop an informative way</b> for citizens to learn about redistricting and gerrymandering practices using maps, data, and successful, unsuccessful, and ongoing initiatives. Propose solutions, policies, and movements that will
+                        <b>prevent marginalization of our voting rights.</b></p>
                 </div>
             </div>
-            <div class="row objective-item wow fadeInUp"  data-wow-delay="0.55s">
+            <div class="row objective-item wow fadeInUp" data-wow-delay="0.55s">
                 <div class="col-lg-12">
                     <h1 class="text-center">The Agenda</h1>
                 </div>
@@ -131,7 +134,7 @@
                 <div class="col-lg-4">
                     <h4><i class="fa fa-calendar" aria-hidden="true"></i> Fri, July 21st: 6:30pm-10pm</h4>
                     <h5>Mix and Mingle Social</h5>
-                     <p>Form your team meeting leaders in the community, and pitch your ideas while networking with TN.</p>
+                    <p>Form your team meeting leaders in the community, and pitch your ideas while networking with TN.</p>
                 </div>
                 <div class="col-lg-4">
                     <h4><i class="fa fa-calendar" aria-hidden="true"></i> Sat, July 22nd: 8am-6:30pm</h4>
@@ -139,61 +142,82 @@
                     <p>Full day to form your groups and start working on ideas, solutions, and proposals to pitch to the judges.</p>
                 </div>
             </div>
+            <div class="row objective-item wow fadeInUp" data-wow-delay="0.55s">
+                <div class="col-lg-12 location">
+                    <h1 class="text-center">Location</h1>
+                    <!-- MAPBOX -->
+                </div>
+                <div class="col-lg-12">
+                    <div id="map" style="width: 400px; height: 300px;"></div>
+                    <script>
+                        mapboxgl.accessToken = 'pk.eyJ1IjoibXZhZGVuIiwiYSI6ImNqNDkwM210ejBsYzQyd3Bldml6bjg4b3kifQ.cONU5CQ0a5BxFjQyzygbtQ';
+                        var map = new mapboxgl.Map({
+                            container: 'map',
+                            style: 'mapbox://styles/mapbox/streets-v10'
+                        });
+                    </script>
+                </div>
+            </div>
         </div>
     </section>
-    
+
     <!-- BACKGROUND INFO AREA -->
-    
+
     <section id="background-info">
         <div class="container">
             <div class="row wow fadeInRight" data-wow-delay="0.3">
                 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                     <h1>The Background</h1>
-                    <p class="lead"><b>Redistricting</b> is the process of redrawing district boundaries, and generally occurs when a state has more congressional representatives than districts. <a href="http://www.ncsl.org/research/about-state-legislatures/number-of-legislators-and-length-of-terms.aspx" target="_blank">State representatives have 2 to 4- year terms</a>, and the number of representatives per state increases with the increase of a state's population. <b>Redistricting</b>, however, only occurs every ten years alongside the national census. The next national census is in 2020.</p>
-                    <p class="lead">Historically, the majority political party in the state legislature has used gerrymandering to influence the next ten years of electoral votes. Districts redrawn on the state level then affect which federal party representatives come into power.</p>
-                    
+                    <p class="lead"><b>Redistricting</b> is the process of redrawing district boundaries, and generally occurs when a state has more congressional representatives than districts. <a href="http://www.ncsl.org/research/about-state-legislatures/number-of-legislators-and-length-of-terms.aspx"
+                            target="_blank">State representatives have 2 to 4- year terms</a>, and the number of representatives per state increases with the increase of a state's population. <b>Redistricting</b>, however, only occurs every ten years alongside
+                        the national census. The next national census is in 2020.</p>
+                    <p class="lead">Historically, the majority political party in the state legislature has used gerrymandering to influence the next ten years of electoral votes. Districts redrawn on the state level then affect which federal party representatives come
+                        into power.</p>
+
                     <h4>Gerrymandering explained</h4>
                     <p class="lead">The diagram below illustrates three ways of redistricting to control the outcome.</p>
-                    <img src="assets/gerrymandering_diagram.png" class="img-responsive hero-logo wow fadeInRight"  data-wow-delay="0.35">
+                    <img src="assets/gerrymandering_diagram.png" class="img-responsive hero-logo wow fadeInRight" data-wow-delay="0.35">
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- THE CARE AREA -->
-    
+
     <section id="the-care">
         <div class="container">
             <div class="row wow fadeInLeft" data-wow-delay="0.5">
                 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                     <h1 class="text-center">Why should you care?</h1>
-                    <p class="lead">Every ten years, following the national census, city council, state legislature and congressional district boundaries must be redrawn to reflect the nation’s shifting population. The way district boundaries are drawn after the national census affects the composure of the state and federal legislatures for multiple election cycles. It is critically important that districts are drawn to maximize fair community representation.</p>
+                    <p class="lead">Every ten years, following the national census, city council, state legislature and congressional district boundaries must be redrawn to reflect the nation’s shifting population. The way district boundaries are drawn after the national
+                        census affects the composure of the state and federal legislatures for multiple election cycles. It is critically important that districts are drawn to maximize fair community representation.</p>
 
                     <p class="lead"><i>Do you know who draws the lines of your district and how this will affect your next election, the school system our children will belong to, or the interests of the community you live in? Do you know what options you have under the current rules – and how to change them?</i></p>
 
-                    <p class="lead">Redistricting mostly takes place behind closed doors. Legislators and political consultants decide which streets or neighborhoods are in or out, specialists make the maps, and the public has little opportunity to weigh in. This opacity allows for districts to be drawn for political gain. We believe that this should change – that this process should be more transparent. We believe that by leveraging technology, citizens can be more involved.</p>
+                    <p class="lead">Redistricting mostly takes place behind closed doors. Legislators and political consultants decide which streets or neighborhoods are in or out, specialists make the maps, and the public has little opportunity to weigh in. This opacity
+                        allows for districts to be drawn for political gain. We believe that this should change – that this process should be more transparent. We believe that by leveraging technology, citizens can be more involved.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CONTACT AREA -->
-    
+
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 contact-col wow fadeInUp" data-wow-delay="0.3s">
                     <h1>Contact Us</h1>
-                    
+
                     <p class="lead">For all inquiries - media and otherwise - please contact the following information listed below:
-                    <hr>
-                    <p>Greater Washington Urban League (Thursday Network)
-                        <br> 2901 14th Street, NW
-                        <br> Washington, D.C., 20024 </p>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ppd@thursdaynetwork.org">ppd@thursdaynetwork.org</a></p>
-                    <hr>
-                    <p class="lead">To find out about sponsoring this event or making a donation, please reach out to Amy Lee Walton, the Personal and Professional Development chair of Thursday Network and Program Manager of this event at</p>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ppd@thursdaynetwork.org">ppd@thursdaynetwork.org</a></p>
+                        <hr>
+                        <p>Greater Washington Urban League (Thursday Network)
+                            <br> 2901 14th Street, NW
+                            <br> Washington, D.C., 20024 </p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ppd@thursdaynetwork.org">ppd@thursdaynetwork.org</a></p>
+                        <hr>
+                        <p class="lead">To find out about sponsoring this event or making a donation, please reach out to Amy Lee Walton, the Personal and Professional Development chair of Thursday Network and Program Manager of this event at</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ppd@thursdaynetwork.org">ppd@thursdaynetwork.org</a></p>
                 </div>
             </div>
         </div>
@@ -214,7 +238,8 @@
     <!-- JS -->
 
     <script src="js/jquery.js"></script>
-
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
+    <!-- MAP BOX -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.1/jquery.plugin.min.js"></script>
