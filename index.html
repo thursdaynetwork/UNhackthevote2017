@@ -199,6 +199,43 @@
                         for (var i = 0; i < inputs.length; i++) {
                             inputs[i].onclick = switchLayer;
                         }
+
+                        map.on('load', function() {
+
+                                    map.loadImage('https://github.com/thursdaynetwork/UNhackthevote2017/blob/mapbox_ironyard/assets/ironyard_logo.png', (error, image) => {
+                                        if (error) throw error;
+                                        map.addImage('logo', image);
+
+                                        map.addLayer({
+                                            "id": "points",
+                                            "type": "symbol",
+                                            "source": {
+                                                "type": "geojson",
+                                                "data": {
+                                                    "type": "FeatureCollection",
+                                                    "features": [{
+                                                        "type": "Feature",
+                                                        "geometry": {
+                                                            "type": "Point",
+                                                            "coordinates": [-77.031517, 38.898601]
+                                                        },
+                                                        "layout": {
+                                                            "icon-image": "logo",
+                                                            "icon-size": 0.25
+                                                        }
+                                                    }, ]
+                                                }
+                                            },
+                                            "layout": {
+                                                "icon-image": "{icon}-15",
+                                                "text-field": "{title}",
+                                                "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                                                "text-offset": [0, 0.6],
+                                                "text-anchor": "top"
+                                            }
+                                        });
+                                    });
+                                });
                     </script>
                 </div>
             </div>
