@@ -88,6 +88,14 @@ section {
     margin: auto;
 }
 
+#menu {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    z-index: 1;
+}
+
 
 /** HERO **/
 
