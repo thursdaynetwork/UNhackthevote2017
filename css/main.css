@@ -72,6 +72,23 @@ section {
 }
 
 
+/** LOCATION + MAPBOX **/
+
+.ironyard {
+    left:50%;
+    top:50%;
+    height: 165px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#map {
+    width: 500px;
+    height: 375px;
+    margin: auto;
+}
+
+
 /** HERO **/
 
 #hero {
