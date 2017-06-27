@@ -2,24 +2,21 @@
 <html lang="en">
 
 <head>
-    <!-- SEO -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="The Official Location Of Thursday Network's 2017 Civic Hackathon.">
-    <meta name="keywords" content="D.C., census, civic, congressional, data, democracy, district, engagement, gerrymandering, government, greater, hack, hacker, hackathon, law, league, national, network, partisan, professionals, politics, public, redistricting, tech, technology, thursday, urban, vote, voting, washington, washington, young, yp">
-    <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Thursday Network: Hackathon 2017</title>
+    <meta name="description" content="">
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- CSS -->
     <link href="https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- JS - Important to load this in head -->
@@ -68,23 +65,13 @@
         <div class="container">
             <div id="header" class="row">
                 <div class="col-lg-6 text-center header-col">
-                    <h1 class="wow fadeInDown">#UNHACKTHEVOTE2017</h1>
-                    <img src="assets/tn-logo.png" class="img-responsive hero-logo wow fadeInDown">
-                    <h5 class=" wow fadeInDown" data-wow-delay="0.6s">We've got something cool brewing in the works at Thursday Network. It involves hacking for a technical solution to the problem of partisan gerrymandering. Want to know more? Keep on reading!</h5>
-                </div>
+                    <h1 class="wow fadeInDown">#UNHACKTHEVOTE2017</h1> <img src="assets/tn-logo.png" class="img-responsive hero-logo wow fadeInDown">
+                    <h5 class=" wow fadeInDown" data-wow-delay="0.6s">We've got something cool brewing in the works at Thursday Network. It involves hacking for a technical solution to the problem of partisan gerrymandering. Want to know more? Keep on reading!</h5> </div>
                 <div class="col-lg-6 text-center header-col  dates">
                     <div class="row">
-                        <h2 class="wow fadeInDown" data-wow-delay="0.3s">July 20
-                            <small>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            </small>
-                            July 21
-                            <small>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            </small>
-                            July 22
-                        </h2>
-                    </div>
+                        <h2 class="wow fadeInDown" data-wow-delay="0.3s">July 20 <small><i class="fa fa-caret-right" aria-hidden="true"></i></small>
+ July 21  <small><i class="fa fa-caret-right" aria-hidden="true"></i></small>
+                        July 22</h2></div>
 
                     <!-- COUNTDOWN -->
                     <div id="countdown-area" class="row wow fadeInRight" data-wow-delay="0.6s">
@@ -192,59 +179,6 @@
                             <label for="satellite">satellite</label>
                         </div>
                     </div>
-                    <script>
-                        mapboxgl.accessToken = "k.eyJ1IjoibXZhZGVuIiwiYSI6ImNqNDkwM210ejBsYzQyd3Bldml6bjg4b3kifQ.cONU5CQ0a5BxFjQyzygbtQ";
-                        var map = new mapboxgl.Map({
-                            container: "map", // container ID
-                            style: "mapbox://styles/mapbox/streets-v10", // hosted style ID
-                            center: [-77.031517, 38.898601], // default position for Ironyard DC
-                            zoom: 14 // starting zoom
-                        });
-
-                        var layerList = document.getElementById("menu");
-                        var inputs = layerList.getElementsByTagName("input");
-
-                        function switchLayer(layer) {
-                            var layerId = layer.target.id;
-                            map.setStyle("mapbox://styles/mapbox/" + layerId + "-v9");
-                        }
-
-                        for (var i = 0; i < inputs.length; i++) {
-                            inputs[i].onclick = switchLayer;
-                        }
-
-                        map.on('load', function() {
-
-                            map.addLayer({
-                                "id": "points",
-                                "type": "symbol",
-                                "source": {
-                                    "type": "geojson",
-                                    "data": {
-                                        "type": "FeatureCollection",
-                                        "features": [{
-                                            "type": "Feature",
-                                            "geometry": {
-                                                "type": "Point",
-                                                "coordinates": [-77.031517, 38.898601]
-                                            },
-                                            "properties": {
-                                                "title": "The Iron Yard",
-                                                "icon": "marker"
-                                            }
-                                        }]
-                                    }
-                                },
-                                "layout": {
-                                    "icon-image": "{icon}-15",
-                                    "text-field": "{title}",
-                                    "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-                                    "text-offset": [0, 0.6],
-                                    "text-anchor": "top"
-                                }
-                            });
-                        });
-                    </script>
                 </div>
             </div>
         </div>
@@ -260,7 +194,6 @@
                     <p class="lead"><b>Redistricting</b> is the process of redrawing district boundaries, and generally occurs when a state has more congressional representatives than districts. <a href="http://www.ncsl.org/research/about-state-legislatures/number-of-legislators-and-length-of-terms.aspx"
                             target="_blank">State representatives have 2 to 4- year terms</a>, and the number of representatives per state increases with the increase of a state's population. <b>Redistricting</b>, however, only occurs every ten years alongside
                         the national census. The next national census is in 2020.</p>
-
                     <p class="lead">Historically, the majority political party in the state legislature has used gerrymandering to influence the next ten years of electoral votes. Districts redrawn on the state level then affect which federal party representatives come
                         into power.</p>
 
@@ -300,13 +233,11 @@
                     <h1>Contact Us</h1>
                     <p class="lead">For all inquiries - media and otherwise - please contact the following information listed below:</p>
                     <hr>
-
                     <p>Greater Washington Urban League (Thursday Network)
                         <br> 2901 14th Street, NW
                         <br> Washington, D.C., 20024 </p>
                     <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ppd@thursdaynetwork.org">ppd@thursdaynetwork.org</a></p>
                     <hr>
-
                     <p class="lead">To find out about sponsoring this event or making a donation, please reach out to Amy Lee Walton, the Personal and Professional Development chair of Thursday Network and Program Manager of this event at</p>
                     <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ppd@thursdaynetwork.org">ppd@thursdaynetwork.org</a></p>
                 </div>
@@ -327,6 +258,7 @@
     </footer>
 
     <!-- JS -->
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nav.js"></script>
@@ -336,7 +268,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment-with-locales.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
