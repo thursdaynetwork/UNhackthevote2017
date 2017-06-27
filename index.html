@@ -2,21 +2,29 @@
 <html lang="en">
 
 <head>
+    <!-- SEO -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The Official Location Of Thursday Network's 2017 Civic Hackathon.">
+    <meta name="keywords" content="D.C., census, civic, congressional, data, democracy, district, engagement, gerrymandering, government, greater, hack, hacker, hackathon, law, league, national, network, partisan, professionals, politics, public, redistricting, tech, technology, thursday, urban, vote, voting, washington, washington, young, yp"> +
+    <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Thursday Network: Hackathon 2017</title>
     <meta name="description" content="">
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- JS - Important to load this in head -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,7 +53,7 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.html"><span>THURSDAY</span> <span style="color:#a9062a;">NETWORK</span></a> </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right" id="top-nav-2">
+                <ul class="nav navbar-nav navbar-right" id="top-nav">
                     <li class="current"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                     <li><a href="https://www.thursdaynetwork.org/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Thursday Network</a></li>
                     <li><a href="https://github.com/thursdaynetwork/HackTheManderDC" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Our Github</a></li>
@@ -113,30 +121,71 @@
                     <p class="lead">Inspire young professionals to protect the voting rights of <a href="https://en.wikipedia.org/wiki/Race_and_ethnicity_in_the_United_States" target="_blank">racial minorities</a>. This Hackathon will push YPs to learn about redistricting and gerrymandering and propose data and technology-driven solutions that increase public awareness.</p>
                 </div>
             </div>
-            <div class="row objective-item wow fadeInUp"  data-wow-delay="0.45s">
+            <div class="row objective-item wow fadeInUp" data-wow-delay="0.45s">
                 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                     <h1 class="text-center">The Challenge</h1>
-                    <p class="lead"><b>Develop an informative way</b> for citizens to learn about redistricting and gerrymandering practices using maps, data, and successful, unsuccessful, and ongoing initiatives. Propose solutions, policies, and movements that will <b>prevent marginalization of our voting rights.</b></p>
+                    <p class="lead"><b>Develop an informative way</b> for citizens to learn about redistricting and gerrymandering practices using maps, data, and successful, unsuccessful, and ongoing initiatives. Propose solutions, policies, and movements that will
+                        <b>prevent marginalization of our voting rights.</b></p>
                 </div>
             </div>
-            <div class="row objective-item wow fadeInUp"  data-wow-delay="0.55s">
+            <div class="row objective-item wow fadeInUp" data-wow-delay="0.55s">
                 <div class="col-lg-12">
                     <h1 class="text-center">The Agenda</h1>
                 </div>
                 <div class="col-lg-4">
-                    <h4><i class="fa fa-calendar" aria-hidden="true"></i> Thu, July 20th: 6:30pm-8:30pm</h4>
+                    <h4><i class="fa fa-calendar" aria-hidden="true"></i> Thu, July 20th: 6:30p-8:30p</h4>
                     <h5>July GBM Hackathon Kickoff</h5>
                     <p>Learn all about redistricting, gerrymandering, and policy.</p>
                 </div>
                 <div class="col-lg-4">
-                    <h4><i class="fa fa-calendar" aria-hidden="true"></i> Fri, July 21st: 6:30pm-10pm</h4>
+                    <h4><i class="fa fa-calendar" aria-hidden="true"></i> Fri, July 21st: 6:30p-10p</h4>
                     <h5>Mix and Mingle Social</h5>
-                     <p>Form your team meeting leaders in the community, and pitch your ideas while networking with TN.</p>
+                    <p>Form your team meeting leaders in the community, and pitch your ideas while networking with TN.</p>
                 </div>
                 <div class="col-lg-4">
-                    <h4><i class="fa fa-calendar" aria-hidden="true"></i> Sat, July 22nd: 8am-6:30pm</h4>
+                    <h4><i class="fa fa-calendar" aria-hidden="true"></i> Sat, July 22nd: 8a-6:30p</h4>
                     <h5>Hackathon: Un-hack the Vote</h5>
                     <p>Full day to form your groups and start working on ideas, solutions, and proposals to pitch to the judges.</p>
+                </div>
+            </div>
+
+            <!-- LOCATION AREA -->
+
+            <div class="row objective-item">
+                <div class="col-lg-12">
+                    <h1 class="text-center wow fadeInUp" data-wow-delay="0.6s">Location</h1>
+                </div>
+                <div class="col-lg-4 col-lg-offset-1 wow fadeInLeft" data-wow-delay="0.6s">
+                    <div class="text-center">
+                        <img src="assets/ironyard_logo.png" class="img-responsive" id="ironyard-logo">
+                        <p class="lead"><b>The Iron Yard Washington DC</b>
+                            <br> 1341 G Street, NW
+                            <br> Floor 2
+                            <br> Washington, D.C., 20005
+                        </p>
+                        <p class="lead"><b>Nearest Metro Stations:</b>
+                            <br> McPherson Square
+                            <br> Metro Center
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.6s">
+                    <div id="map">
+                        <div id="menu">
+                            <input id="basic" type="radio" name="rtoggle" value="basic" checked="checked">
+                            <label for="basic">basic</label>
+                            <input id="streets" type="radio" name="rtoggle" value="streets">
+                            <label for="streets">streets</label>
+                            <input id="bright" type="radio" name="rtoggle" value="bright">
+                            <label for="bright">bright</label>
+                            <input id="light" type="radio" name="rtoggle" value="light">
+                            <label for="light">light</label>
+                            <input id="dark" type="radio" name="rtoggle" value="dark">
+                            <label for="dark">dark</label>
+                            <input id="satellite" type="radio" name="rtoggle" value="satellite">
+                            <label for="satellite">satellite</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,7 +203,7 @@
 
                     <h4>Gerrymandering explained</h4>
                     <p class="lead">The diagram below illustrates three ways of redistricting to control the outcome.</p>
-                    <img src="assets/gerrymandering_diagram.png" class="img-responsive hero-logo wow fadeInRight"  data-wow-delay="0.35">
+                    <img src="assets/gerrymandering_diagram.png" class="img-responsive hero-logo wow fadeInRight" data-wow-delay="0.35">
                 </div>
             </div>
         </div>
@@ -184,12 +233,11 @@
             <div class="row">
                 <div class="col-lg-5 contact-col wow fadeInUp" data-wow-delay="0.3s">
                     <h1>Contact Us</h1>
-
-                    <p class="lead">For all inquiries - media and otherwise - please contact the following information listed below:
+                    <p class="lead">For all inquiries - media and otherwise - please contact the following information listed below:</p>
                     <hr>
                     <p>Greater Washington Urban League (Thursday Network)
                         <br> 2901 14th Street, NW
-                        <br> Washington, D.C., 20009 </p>
+                        <br> Washington, D.C., 20024 </p>
                     <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ppd@thursdaynetwork.org">ppd@thursdaynetwork.org</a></p>
                     <hr>
                     <p class="lead">To find out about sponsoring this event or making a donation, please reach out to Amy Lee Walton, the Personal and Professional Development chair of Thursday Network and Program Manager of this event at</p>
@@ -214,7 +262,6 @@
     <!-- JS -->
 
     <script src="js/jquery.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.1/jquery.plugin.min.js"></script>
