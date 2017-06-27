@@ -6,8 +6,8 @@ $(document).ready(function () {
         mobile: false, // default
     })
     wow.init();
-    $('#top-nav').onePageNav({
-        currentClass: 'current',
+    $("#top-nav").onePageNav({
+        currentClass: "current",
         changeHash: true,
         scrollSpeed: 1200
     });
@@ -58,27 +58,27 @@ $(document).ready(function () {
 
 
     /** MAPBOX API **/
-    mapboxgl.accessToken = 'pk.eyJ1IjoibXZhZGVuIiwiYSI6ImNqNDkwM210ejBsYzQyd3Bldml6bjg4b3kifQ.cONU5CQ0a5BxFjQyzygbtQ';
+    mapboxgl.accessToken = "pk.eyJ1IjoibXZhZGVuIiwiYSI6ImNqNDkwM210ejBsYzQyd3Bldml6bjg4b3kifQ.cONU5CQ0a5BxFjQyzygbtQ";
     var map = new mapboxgl.Map({
-        container: 'map', // container ID
-        style: 'mapbox://styles/mapbox/streets-v10', // hosted style ID
+        container: "map", // container ID
+        style: "mapbox://styles/mapbox/streets-v10", // hosted style ID
         center: [-77.031517, 38.898601], // default position for Ironyard DC
         zoom: 14 // starting zoom
     });
 
-    var layerList = document.getElementById('menu');
-    var inputs = layerList.getElementsByTagName('input');
+    var layerList = document.getElementById("menu");
+    var inputs = layerList.getElementsByTagName("input");
 
     function switchLayer(layer) {
         var layerId = layer.target.id;
-        map.setStyle('mapbox://styles/mapbox/' + layerId + '-v9');
+        map.setStyle("mapbox://styles/mapbox/" + layerId + "-v9");
     }
 
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].onclick = switchLayer;
     }
 
-    map.on('load', function () {
+    map.on("load", function () {
 
         map.addLayer({
             "id": "points",
