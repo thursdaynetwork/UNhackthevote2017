@@ -73,17 +73,13 @@ section {
 
 
 /** LOCATION + MAPBOX **/
-
-.ironyard {
-    left:50%;
-    top:50%;
-    height: 165px;
-    margin: 0 auto;
-    width: 200px;
+#ironyard-logo{
+    margin: auto;
+    max-width: 180px;
+    padding:10px;
 }
-
 #map {
-    width: 500px;
+    width: 100%;
     height: 375px;
     margin: auto;
 }
@@ -182,7 +178,7 @@ section {
 /** OBJECTIVES **/
 
 #objectives h1{
-    padding-bottom:15px;
+    padding-bottom:20px;
 }
 
 .objective-item {
