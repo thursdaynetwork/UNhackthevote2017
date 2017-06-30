@@ -176,6 +176,7 @@ section h1 {
 }
 #background-info img {
     max-width: 800px;
+    width: 100%;
     padding-top: 45px;
     padding-bottom: 45px;
     display: block;
