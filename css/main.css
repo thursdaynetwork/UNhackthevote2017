@@ -221,6 +221,16 @@ footer {
     padding: 20px;
 }
 
+/** FAQ PAGE **/
+
+#faq h1 {
+    padding-top: 40px;
+}
+.faq-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /** CUSTOM BOOTSTRAP NAVBAR **/
 
 .navbar-default {
