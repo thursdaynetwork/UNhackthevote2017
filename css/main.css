@@ -198,8 +198,16 @@ section h1 {
 
 /** FAQ PAGE **/
 
-.faq-item {
-    min-height: 300px;
+.faq-item {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .faq-item {
+        min-height: 200px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .faq-item {
+        min-height: 250px;
+    }
 }
 
 /** CONTACT **/
