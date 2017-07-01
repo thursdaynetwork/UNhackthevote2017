@@ -58,10 +58,10 @@ $(document).ready(function () {
 
 
     /** MAPBOX API **/
-    mapboxgl.accessToken = "pk.eyJ1IjoibXZhZGVuIiwiYSI6ImNqNDkwM210ejBsYzQyd3Bldml6bjg4b3kifQ.cONU5CQ0a5BxFjQyzygbtQ";
+    mapboxgl.accessToken = "pk.eyJ1IjoibXZhZGVuIiwiYSI6ImNqNGx2emYwODE5NW4yd3AyYW9laHZpN3UifQ.aMYcdAuZs_fI_bTfZI7Olw";
     var map = new mapboxgl.Map({
         container: "map", // container ID
-        style: "mapbox://styles/mapbox/streets-v10", // hosted style ID
+        style: "mapbox://styles/mslee/cj0obwm1700872smpb8y9qqdh", // hosted style ID
         center: [-77.031517, 38.898601], // default position for Ironyard DC
         zoom: 14 // starting zoom
     });
@@ -69,14 +69,14 @@ $(document).ready(function () {
     var layerList = document.getElementById("menu");
     var inputs = layerList.getElementsByTagName("input");
 
-    function switchLayer(layer) {
-        var layerId = layer.target.id;
-        map.setStyle("mapbox://styles/mapbox/" + layerId + "-v9");
-    }
-
-    for (var i = 0; i < inputs.length; i++) {
-        inputs[i].onclick = switchLayer;
-    }
+    // function switchLayer(layer) {
+    //     var layerId = layer.target.id;
+    //     map.setStyle("mapbox://styles/mslee/cj0obwm1700872smpb8y9qqdh" /*+ layerId + "-v9"*/);
+    // }
+    //
+    // for (var i = 0; i < inputs.length; i++) {
+    //     inputs[i].onclick = switchLayer;
+    // }
 
     map.on("load", function () {
 
