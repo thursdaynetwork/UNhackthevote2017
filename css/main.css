@@ -160,12 +160,18 @@ section h1 {
 
 /** OBJECTIVES **/
 
-#objectives h1 {
-    padding-bottom: 30px;
+#the-goal,
+#the-challenge,
+#the-agenda {
+    min-height: 0;
 }
-.objective-item {
-    padding-top: 20px;
+#the-goal,
+#the-challenge {
     padding-bottom: 20px;
+}
+.objective-item {}
+.objective-item h1 {
+    padding-bottom: 30px;
 }
 
 /** BACKGROUND INFO **/
@@ -234,9 +240,8 @@ footer {
     min-height: 60px;
     padding: 20px;
 }
-
 footer a {
-    color:#9b9b9b;
+    color: #9b9b9b;
 }
 
 /** CUSTOM BOOTSTRAP NAVBAR **/
