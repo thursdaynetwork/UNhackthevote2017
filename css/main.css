@@ -58,7 +58,7 @@ a:hover {
     text-decoration: none;
 }
 section {
-    padding: 70px 0;
+    padding: 80px 0;
     min-height: 750px;
 }
 section h1 {
@@ -169,7 +169,6 @@ section h1 {
 #the-challenge {
     padding-bottom: 20px;
 }
-.objective-item {}
 .objective-item h1 {
     padding-bottom: 30px;
 }
@@ -205,6 +204,9 @@ section h1 {
 
 /** FAQ PAGE **/
 
+#faq {
+    background-color: #ccc;
+}
 .faq-item {}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .faq-item {
