@@ -235,6 +235,10 @@ footer {
     padding: 20px;
 }
 
+footer a {
+    color:#9b9b9b;
+}
+
 /** CUSTOM BOOTSTRAP NAVBAR **/
 
 .navbar-default {
