@@ -63,8 +63,15 @@ $(document).ready(function () {
         container: "map", // container ID
         style: "mapbox://styles/mslee/cj0obwm1700872smpb8y9qqdh", // hosted style ID
         center: [-77.031517, 38.898601], // default position for Ironyard DC
-        zoom: 14 // starting zoom
+        zoom: 14, // starting zoom
+        scroll: scrollZoom=false
     });
+
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+    // disable map zoom when using scroll
+    map.scrollZoom.disable();
 
     var layerList = document.getElementById("menu");
     var inputs = layerList.getElementsByTagName("input");
