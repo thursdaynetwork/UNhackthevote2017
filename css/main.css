@@ -54,11 +54,11 @@ a:active {
     text-decoration: none;
 }
 a:hover {
-    color: #a7606f;
+    color: #c4c4c4;
     text-decoration: none;
 }
 section {
-    padding: 70px 0;
+    padding: 80px 0;
     min-height: 750px;
 }
 section h1 {
@@ -160,12 +160,17 @@ section h1 {
 
 /** OBJECTIVES **/
 
-#objectives h1 {
-    padding-bottom: 30px;
+#the-goal,
+#the-challenge,
+#the-agenda {
+    min-height: 0;
 }
-.objective-item {
-    padding-top: 20px;
+#the-goal,
+#the-challenge {
     padding-bottom: 20px;
+}
+.objective-item h1 {
+    padding-bottom: 30px;
 }
 
 /** BACKGROUND INFO **/
@@ -199,6 +204,9 @@ section h1 {
 
 /** FAQ PAGE **/
 
+#faq {
+    background-color: #ccc;
+}
 .faq-item {}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .faq-item {
@@ -233,6 +241,9 @@ footer {
     font-size: 12px;
     min-height: 60px;
     padding: 20px;
+}
+footer a {
+    color: #9b9b9b;
 }
 
 /** CUSTOM BOOTSTRAP NAVBAR **/
