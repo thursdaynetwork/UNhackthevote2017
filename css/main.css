@@ -122,6 +122,10 @@ section h1 {
 
 /** SIGNUP BUTTON **/
 
+.agenda-registration {
+    margin: 35px;
+}
+
 .btn-hero {
     background-color: #a9062a;
     border: 1px solid #a9062a;
