@@ -122,8 +122,12 @@ section h1 {
 
 /** SIGNUP BUTTON **/
 
-.agenda-registration {
+.agenda-reg-btn {
     margin: 35px;
+}
+
+.faq-reg-btn {
+    margin-top: -200px !important;
 }
 
 .btn-hero {
