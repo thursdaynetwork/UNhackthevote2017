@@ -232,6 +232,14 @@ section h1 {
     min-height: 575px;
 }
 
+.email {
+    margin-bottom: 45px;
+}
+
+.sponsor, .inquire {
+    font-size: 18px;
+}
+
 /** FOOTER **/
 
 footer {
