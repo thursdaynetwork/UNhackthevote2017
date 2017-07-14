@@ -116,11 +116,14 @@ section h1 {
 }
 .progress-count label {
     display: block;
-    color: white;
     margin-top: 10px;
 }
 
 /** SIGNUP BUTTON **/
+
+.agenda-reg-btn {
+    margin: 35px;
+}
 
 .btn-hero {
     background-color: #a9062a;
@@ -138,6 +141,7 @@ section h1 {
     color: #a9062a;
     border-color: #ffffff;
 }
+
 @media screen and (max-width: 599px) {
     .header-col {
         padding-top: 15px;
@@ -167,12 +171,25 @@ section h1 {
 #the-agenda {
     min-height: 0;
 }
+
 #the-goal,
 #the-challenge {
     padding-bottom: 20px;
 }
+
 .objective-item h1 {
     padding-bottom: 30px;
+    clear: inherit;
+}
+
+/** THE AGENDA **/
+
+.agenda-lead {
+    padding-bottom: 40px;
+}
+
+.gbm {
+    clear: left;
 }
 
 /** BACKGROUND INFO **/
@@ -210,7 +227,8 @@ section h1 {
     background-color: #ccc;
 }
 
-.faq-item {}
+/*.faq-item {}*/
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .faq-item {
         min-height: 200px;
