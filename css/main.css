@@ -164,6 +164,8 @@ section h1 {
 
 /** OBJECTIVES **/
 
+
+
 #the-goal,
 #the-challenge,
 #the-agenda {
@@ -224,7 +226,9 @@ section h1 {
 #faq {
     background-color: #ccc;
 }
+
 /*.faq-item {}*/
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .faq-item {
         min-height: 200px;
@@ -240,14 +244,18 @@ section h1 {
 
 #contact {
     background-color: #111111;
-    color: #ffffff;
-    min-height: 750px;
-}
-.contact-col {
     float: none;
     margin: 0 auto;
-    padding-top: 20px;
-    text-align: center;
+    color: #ffffff;
+    min-height: 575px;
+}
+
+.email {
+    margin-bottom: 45px;
+}
+
+.sponsor, .inquire {
+    font-size: 18px;
 }
 
 /** FOOTER **/
