@@ -100,6 +100,19 @@ section h1 {
     margin: 10px auto;
 }
 
+/** SPONSORS **/
+
+#sponsors {
+  background-color: #eee;
+  color: #999;
+  min-height: 175px;
+  max-height: 175px;
+  padding: 20px 0;
+  font-size: 12px;
+  font-style: italic;
+}
+
+
 /** COUNTDOWN **/
 
 #countdown-area {
