@@ -234,6 +234,21 @@ section h1 {
     min-height: 600px;
 }
 
+/** THE BIOGRAPHIES **/
+
+.bio {
+    font-size: 18px;
+
+}
+
+.judges-photo {
+    width: 170px;
+    height: auto;
+    float: left;
+    margin: 15px 25px;
+    clear: left;
+}
+
 /** FAQ PAGE **/
 
 #faq {
