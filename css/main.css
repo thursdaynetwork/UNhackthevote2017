@@ -241,11 +241,15 @@ section h1 {
 
 }
 
+.para-align {
+    margin: 0 auto;
+}
+
 .judges-photo {
     width: 170px;
     height: auto;
     float: left;
-    margin: 15px 25px;
+    margin: 15px 35px;
     clear: left;
 }
 
