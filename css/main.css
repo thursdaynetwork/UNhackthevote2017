@@ -111,6 +111,10 @@ section h1 {
     font-size: 12px;
     font-style: italic;
 }
+#sponsors img {
+    max-width: 100%;
+    height: auto;
+}
 
 /** COUNTDOWN **/
 
