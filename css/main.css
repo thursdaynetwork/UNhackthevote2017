@@ -150,6 +150,10 @@ section h1 {
     padding: 10px 20px;
     margin: 0px auto;
 }
+.btn-alt {
+    background-color: #111111;
+    border: 1px solid #111111;
+}
 .btn-hero:hover,
 .btn-hero:focus {
     background-color: #fff;
@@ -230,10 +234,29 @@ section h1 {
     min-height: 600px;
 }
 
+/** THE BIOGRAPHIES **/
+
+#bios {
+    background-color: #ccc;
+    font-size: 18px;
+}
+.profile-card {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+.judges-photo {
+    padding-bottom: 15px;
+    max-width: 200px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+
 /** FAQ PAGE **/
 
 #faq {
-    background-color: #ccc;
+    background-color: #a9062a;
+    color: #fff;
 }
 
 /*.faq-item {}*/
@@ -252,10 +275,10 @@ section h1 {
 /** CONTACT **/
 
 #contact {
-    background-color: #111111;
+    background-color: #fff;
     float: none;
     margin: 0 auto;
-    color: #ffffff;
+    color: #111111;
     min-height: 575px;
 }
 .email {
@@ -361,6 +384,14 @@ footer a {
     }
     .navbar-default.animated .navbar-nav {
         background-color: #ffffff;
+    }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+    .navbar-default .navbar-brand {
+        font-size: 20px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        font-size: 12.5px;
     }
 }
 
