@@ -3,7 +3,7 @@ $(window).load(function () {
 });
 $(document).ready(function () {
     wow = new WOW({
-        mobile: false, // default
+        mobile: true, // default
     })
     wow.init();
     $("#top-nav").onePageNav({
@@ -64,7 +64,7 @@ $(document).ready(function () {
         style: "mapbox://styles/mslee/cj0obwm1700872smpb8y9qqdh", // hosted style ID
         center: [-77.031517, 38.898601], // default position for Ironyard DC
         zoom: 14, // starting zoom
-        scroll: scrollZoom=false
+        scroll: scrollZoom = false
     });
 
     // Add zoom and rotation controls to the map.
