@@ -99,6 +99,9 @@ section h1 {
     max-width: 300px;
     margin: 10px auto;
 }
+#winners {
+    padding: 20px;
+}
 
 /** SPONSORS **/
 
