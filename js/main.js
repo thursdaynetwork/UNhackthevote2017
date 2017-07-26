@@ -1,3 +1,6 @@
+
+
+
 $(window).load(function () {
     $("#preloader").fadeOut("slow");
 });
@@ -23,6 +26,11 @@ $(document).ready(function () {
     });
 
 
+    /** 'Thank You' Modal **/
+    $(window).on('load',function(){
+        $('.ui.modal')
+            .modal('show')
+        });
 
     /** COUNTDOWN JAVASCRIPT SOURCED FROM - https://codepen.io/danieloprado/pen/aObYYj **/
 
@@ -76,14 +84,6 @@ $(document).ready(function () {
     var layerList = document.getElementById("menu");
     var inputs = layerList.getElementsByTagName("input");
 
-    // function switchLayer(layer) {
-    //     var layerId = layer.target.id;
-    //     map.setStyle("mapbox://styles/mslee/cj0obwm1700872smpb8y9qqdh" /*+ layerId + "-v9"*/);
-    // }
-    //
-    // for (var i = 0; i < inputs.length; i++) {
-    //     inputs[i].onclick = switchLayer;
-    // }
 
     map.on("load", function () {
 
