@@ -100,6 +100,13 @@ section h1 {
     margin: 10px auto;
 }
 
+/** CAROUSEL **/
+
+#myCarousel img {
+    width: 100%;
+    height: auto;
+}
+
 /** SPONSORS **/
 
 #sponsors {
